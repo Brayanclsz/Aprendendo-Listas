@@ -12,3 +12,4 @@ C:\Users\10607.115\Documents\Listas\AprendendoLists\obj\Debug\net8.0\refint\Apre
 C:\Users\10607.115\Documents\Listas\AprendendoLists\obj\Debug\net8.0\AprendendoLists.pdb
 C:\Users\10607.115\Documents\Listas\AprendendoLists\obj\Debug\net8.0\AprendendoLists.genruntimeconfig.cache
 C:\Users\10607.115\Documents\Listas\AprendendoLists\obj\Debug\net8.0\ref\AprendendoLists.dll
+C:\Users\10607.115\Documents\Listas\AprendendoLists\obj\Debug\net8.0\AprendendoLists.sourcelink.json

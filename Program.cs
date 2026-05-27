@@ -1,21 +1,27 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
-class Program2
+class Program
 {
-    static List<string> catalogo = new List<string>();
+    static List<Produto> catalogo = new List<Produto>();
 
     static void Main()
     {
-        catalogo.Add("Hambúrguer Especial");
-        catalogo.Add("Batata Rústica");
-        catalogo.Add("Refrigerante Artesanal");
+        Produto produto1 = new Produto("Hambúrguer Especial", 34.90);
+        Produto produto2 = new Produto("Batata Rústica", 18.00);
+        Produto produto3 = new Produto("Refrigerante Artesanal", 9.50);
+        catalogo.Add(produto1);
+        catalogo.Add(produto2);
+        catalogo.Add(produto3);
 
         Console.WriteLine("--- Catalogo Inicial ---\n");
         Listar();
 
-        catalogo.Insert(0, "Pizza Quatro Queijos"); // Adiciona no início
-        catalogo.Remove("Refrigerante Artesanal");   // Remove o refrigerante
+        Produto Produto0 = new Produto("Pizza Quatro Queijos", 48.00);
+        catalogo.Insert(0, Produto0);
+
+        catalogo.Remove(produto3);
 
         Console.WriteLine("\n--- Catalogo Atualizado ---\n");
         Listar();
@@ -45,7 +51,7 @@ class Program2
     }
     static void Listar()
     {
-        foreach (string produto in catalogo)
+        foreach (Produto produto in catalogo)
         {
             Console.WriteLine(produto);
         }
@@ -53,14 +59,13 @@ class Program2
 
     static void Verificar(string oqVerifica)
     {
-        bool verif = catalogo.Contains(oqVerifica);
+        bool verif = catalogo.Any(cadaProduto => cadaProduto.Nome == oqVerifica);
         Console.WriteLine(verif);
-
     }
 
     static void ProcuraIndice(string indiceDeqm)
     {
-        int indice = catalogo.IndexOf(indiceDeqm);
+        int indice = catalogo.FindIndex(cadaProduto => cadaProduto.Nome == indiceDeqm);
         Console.WriteLine($"O índice do {indiceDeqm} é {indice}");
     }
 
@@ -71,10 +76,8 @@ class Program2
             Console.WriteLine($"Produto: {catalogo[i]} Indice: {i}");
         }
     }
-
     static void Contagem()
     {
         Console.WriteLine($"A lista possui {catalogo.Count} itens");
     }
-    
 }
