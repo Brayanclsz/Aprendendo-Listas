@@ -1,0 +1,14 @@
+C:\Users\10607.115\Documents\Listas\AprendendoLists\bin\Debug\net8.0\AprendendoLists.exe
+C:\Users\10607.115\Documents\Listas\AprendendoLists\bin\Debug\net8.0\AprendendoLists.deps.json
+C:\Users\10607.115\Documents\Listas\AprendendoLists\bin\Debug\net8.0\AprendendoLists.runtimeconfig.json
+C:\Users\10607.115\Documents\Listas\AprendendoLists\bin\Debug\net8.0\AprendendoLists.dll
+C:\Users\10607.115\Documents\Listas\AprendendoLists\bin\Debug\net8.0\AprendendoLists.pdb
+C:\Users\10607.115\Documents\Listas\AprendendoLists\obj\Debug\net8.0\AprendendoLists.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\10607.115\Documents\Listas\AprendendoLists\obj\Debug\net8.0\AprendendoLists.AssemblyInfoInputs.cache
+C:\Users\10607.115\Documents\Listas\AprendendoLists\obj\Debug\net8.0\AprendendoLists.AssemblyInfo.cs
+C:\Users\10607.115\Documents\Listas\AprendendoLists\obj\Debug\net8.0\AprendendoLists.csproj.CoreCompileInputs.cache
+C:\Users\10607.115\Documents\Listas\AprendendoLists\obj\Debug\net8.0\AprendendoLists.dll
+C:\Users\10607.115\Documents\Listas\AprendendoLists\obj\Debug\net8.0\refint\AprendendoLists.dll
+C:\Users\10607.115\Documents\Listas\AprendendoLists\obj\Debug\net8.0\AprendendoLists.pdb
+C:\Users\10607.115\Documents\Listas\AprendendoLists\obj\Debug\net8.0\AprendendoLists.genruntimeconfig.cache
+C:\Users\10607.115\Documents\Listas\AprendendoLists\obj\Debug\net8.0\ref\AprendendoLists.dll
