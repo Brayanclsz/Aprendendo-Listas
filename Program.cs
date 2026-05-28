@@ -1,11 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-
 class Program
 {
     static List<Produto> catalogo = new List<Produto>();
-
     static void Main()
     {
         Produto produto1 = new Produto("Hambúrguer Especial", 34.90);
@@ -35,11 +33,9 @@ class Program
 
         Verificar(oqVerifica);
 
-
         string indiceDeqm = "Pizza Quatro Queijos";
         Console.WriteLine("\nQual o índice da Pizza QuatroQueijos no catálogo? ");
         ProcuraIndice(indiceDeqm);
-
 
         Console.WriteLine("\n---- Impressão Final ----\n");
 
@@ -49,13 +45,11 @@ class Program
 
         Contagem();
 
-
     }
     static void Listar()
     {
         foreach (Produto produto in catalogo)
             {
-                // Usa automaticamente o ToString() da classe Produto
                 Console.WriteLine(produto); 
                 Console.WriteLine("-----------------------------------------------------------------");
             }
@@ -65,13 +59,11 @@ class Program
         bool verif = catalogo.Any(cadaProduto => cadaProduto.Nome == oqVerifica);
         Console.WriteLine(verif);
     }
-
     static void ProcuraIndice(string indiceDeqm)
     {
         int indice = catalogo.FindIndex(cadaProduto => cadaProduto.Nome == indiceDeqm);
         Console.WriteLine($"O índice do {indiceDeqm} é {indice}");
     }
-
     static void ListaComIndice()
     {
         for (int i = 0; i < catalogo.Count; i++)
