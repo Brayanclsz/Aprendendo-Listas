@@ -9,6 +9,8 @@ class Program
     static void Main()
     {
         Produto produto1 = new Produto("Hambúrguer Especial", 34.90);
+        Produto produto09 = new Produto();
+
         Produto produto2 = new Produto("Batata Rústica", 18.00);
         Produto produto3 = new Produto("Refrigerante Artesanal", 9.50);
         catalogo.Add(produto1);
@@ -52,11 +54,12 @@ class Program
     static void Listar()
     {
         foreach (Produto produto in catalogo)
-        {
-            Console.WriteLine(produto);
-        }
+            {
+                // Usa automaticamente o ToString() da classe Produto
+                Console.WriteLine(produto); 
+                Console.WriteLine("-----------------------------------------------------------------");
+            }
     }
-
     static void Verificar(string oqVerifica)
     {
         bool verif = catalogo.Any(cadaProduto => cadaProduto.Nome == oqVerifica);
@@ -71,9 +74,9 @@ class Program
 
     static void ListaComIndice()
     {
-        for(int i = 0; i < catalogo.Count; i++)
+        for (int i = 0; i < catalogo.Count; i++)
         {
-            Console.WriteLine($"Produto: {catalogo[i]} Indice: {i}");
+            Console.WriteLine($"[Índice: {i}] -> {catalogo[i].Nome} (R$ {catalogo[i].PrecoDesconto:F2})");
         }
     }
     static void Contagem()
